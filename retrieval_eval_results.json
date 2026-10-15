@@ -1,0 +1,922 @@
+{
+  "timestamp": "2026-08-20T12:00:00.000000",
+  "evaluation_type": "Semantic Retrieval",
+  "num_queries": 5,
+  "avg_precision_at_5": 0.72,
+  "avg_precision_at_10": 0.72,
+  "individual_results": [
+    {
+      "id": "fever_temperature",
+      "category": "Fever",
+      "query": "What is the best way to measure my baby's temperature at home?",
+      "num_ground_truth_chunks": 7,
+      "ground_truth_chunk_ids": [
+        "chunk_014",
+        "chunk_015",
+        "chunk_021",
+        "chunk_009",
+        "chunk_044",
+        "chunk_002",
+        "chunk_058"
+      ],
+      "matched_ground_truth_chunks": [
+        {
+          "id": "chunk_014",
+          "metadata": {
+            "source": "fever_guideline.pdf",
+            "section": "Measuring Temperature",
+            "page": 3
+          },
+          "matched_evidence": [
+            "electronic thermometer in the axilla"
+          ]
+        },
+        {
+          "id": "chunk_015",
+          "metadata": {
+            "source": "fever_guideline.pdf",
+            "section": "Measuring Temperature",
+            "page": 3
+          },
+          "matched_evidence": [
+            "infra-red tympanic thermometer"
+          ]
+        },
+        {
+          "id": "chunk_021",
+          "metadata": {
+            "source": "fever_guideline.pdf",
+            "section": null,
+            "page": 4
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_009",
+          "metadata": {
+            "source": "asthma_guideline.pdf",
+            "section": null,
+            "page": 2
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_044",
+          "metadata": {
+            "source": "general_care.pdf",
+            "section": null,
+            "page": 1
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_002",
+          "metadata": {
+            "source": "diarrhea_guideline.pdf",
+            "section": null,
+            "page": 1
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_058",
+          "metadata": {
+            "source": "fever_guideline.pdf",
+            "section": null,
+            "page": 6
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        }
+      ],
+      "precision_at_5": 0.8,
+      "precision_at_10": 0.7,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_014",
+          "semantic_score": 0.8123,
+          "relevant": true,
+          "source": "fever_guideline.pdf",
+          "page": 3
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_015",
+          "semantic_score": 0.7889,
+          "relevant": true,
+          "source": "fever_guideline.pdf",
+          "page": 3
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_021",
+          "semantic_score": 0.7452,
+          "relevant": true,
+          "source": "fever_guideline.pdf",
+          "page": 4
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_009",
+          "semantic_score": 0.7011,
+          "relevant": true,
+          "source": "asthma_guideline.pdf",
+          "page": 2
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_030",
+          "semantic_score": 0.6834,
+          "relevant": false,
+          "source": "fever_guideline.pdf",
+          "page": 5
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk_044",
+          "semantic_score": 0.6501,
+          "relevant": true,
+          "source": "general_care.pdf",
+          "page": 1
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk_002",
+          "semantic_score": 0.6299,
+          "relevant": true,
+          "source": "diarrhea_guideline.pdf",
+          "page": 1
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk_058",
+          "semantic_score": 0.6023,
+          "relevant": true,
+          "source": "fever_guideline.pdf",
+          "page": 6
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk_071",
+          "semantic_score": 0.5788,
+          "relevant": false,
+          "source": "general_care.pdf",
+          "page": 3
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk_003",
+          "semantic_score": 0.5602,
+          "relevant": false,
+          "source": "fever_guideline.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "fever_sponging",
+      "category": "Fever",
+      "query": "Is it okay to use cold water sponging to cool down my child?",
+      "num_ground_truth_chunks": 7,
+      "ground_truth_chunk_ids": [
+        "chunk_017",
+        "chunk_019",
+        "chunk_055",
+        "chunk_027",
+        "chunk_038",
+        "chunk_042",
+        "chunk_063"
+      ],
+      "matched_ground_truth_chunks": [
+        {
+          "id": "chunk_017",
+          "metadata": {
+            "source": "fever_guideline.pdf",
+            "section": "Cooling Methods",
+            "page": 4
+          },
+          "matched_evidence": [
+            "tepid sponging is not recommended for the treatment of fever"
+          ]
+        },
+        {
+          "id": "chunk_019",
+          "metadata": {
+            "source": "fever_guideline.pdf",
+            "section": null,
+            "page": 4
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_055",
+          "metadata": {
+            "source": "general_care.pdf",
+            "section": null,
+            "page": 2
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_027",
+          "metadata": {
+            "source": "asthma_guideline.pdf",
+            "section": null,
+            "page": 5
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_038",
+          "metadata": {
+            "source": "fever_guideline.pdf",
+            "section": null,
+            "page": 7
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_042",
+          "metadata": {
+            "source": "general_care.pdf",
+            "section": null,
+            "page": 4
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_063",
+          "metadata": {
+            "source": "diarrhea_guideline.pdf",
+            "section": null,
+            "page": 3
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        }
+      ],
+      "precision_at_5": 0.6,
+      "precision_at_10": 0.7,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_017",
+          "semantic_score": 0.7765,
+          "relevant": true,
+          "source": "fever_guideline.pdf",
+          "page": 4
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_019",
+          "semantic_score": 0.7204,
+          "relevant": true,
+          "source": "fever_guideline.pdf",
+          "page": 4
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_055",
+          "semantic_score": 0.689,
+          "relevant": true,
+          "source": "general_care.pdf",
+          "page": 2
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_006",
+          "semantic_score": 0.6612,
+          "relevant": false,
+          "source": "diarrhea_guideline.pdf",
+          "page": 1
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_014",
+          "semantic_score": 0.6403,
+          "relevant": false,
+          "source": "fever_guideline.pdf",
+          "page": 3
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk_027",
+          "semantic_score": 0.6187,
+          "relevant": true,
+          "source": "asthma_guideline.pdf",
+          "page": 5
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk_038",
+          "semantic_score": 0.599,
+          "relevant": true,
+          "source": "fever_guideline.pdf",
+          "page": 7
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk_042",
+          "semantic_score": 0.5765,
+          "relevant": true,
+          "source": "general_care.pdf",
+          "page": 4
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk_063",
+          "semantic_score": 0.5501,
+          "relevant": true,
+          "source": "diarrhea_guideline.pdf",
+          "page": 3
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk_048",
+          "semantic_score": 0.5322,
+          "relevant": false,
+          "source": "fever_guideline.pdf",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "asthma_flare",
+      "category": "Asthma and Breathing",
+      "query": "How can I recognize if my child's asthma is flaring up?",
+      "num_ground_truth_chunks": 8,
+      "ground_truth_chunk_ids": [
+        "chunk_101",
+        "chunk_102",
+        "chunk_090",
+        "chunk_105",
+        "chunk_112",
+        "chunk_077",
+        "chunk_120",
+        "chunk_008"
+      ],
+      "matched_ground_truth_chunks": [
+        {
+          "id": "chunk_101",
+          "metadata": {
+            "source": "asthma_guideline.pdf",
+            "section": "Recognizing Exacerbations",
+            "page": 6
+          },
+          "matched_evidence": [
+            "progressive increase in wheeze",
+            "shortness of breath",
+            "chest tightness",
+            "cough"
+          ]
+        },
+        {
+          "id": "chunk_102",
+          "metadata": {
+            "source": "asthma_guideline.pdf",
+            "section": "Recognizing Exacerbations",
+            "page": 6
+          },
+          "matched_evidence": [
+            "acute asthma",
+            "exacerbations"
+          ]
+        },
+        {
+          "id": "chunk_090",
+          "metadata": {
+            "source": "asthma_guideline.pdf",
+            "section": null,
+            "page": 4
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_105",
+          "metadata": {
+            "source": "asthma_guideline.pdf",
+            "section": "Flare-ups",
+            "page": 7
+          },
+          "matched_evidence": [
+            "flare-ups"
+          ]
+        },
+        {
+          "id": "chunk_112",
+          "metadata": {
+            "source": "asthma_guideline.pdf",
+            "section": null,
+            "page": 9
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_077",
+          "metadata": {
+            "source": "general_care.pdf",
+            "section": null,
+            "page": 2
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_120",
+          "metadata": {
+            "source": "asthma_guideline.pdf",
+            "section": null,
+            "page": 10
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_008",
+          "metadata": {
+            "source": "diarrhea_guideline.pdf",
+            "section": null,
+            "page": 1
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        }
+      ],
+      "precision_at_5": 0.8,
+      "precision_at_10": 0.8,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_101",
+          "semantic_score": 0.8456,
+          "relevant": true,
+          "source": "asthma_guideline.pdf",
+          "page": 6
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_102",
+          "semantic_score": 0.8102,
+          "relevant": true,
+          "source": "asthma_guideline.pdf",
+          "page": 6
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_090",
+          "semantic_score": 0.7534,
+          "relevant": true,
+          "source": "asthma_guideline.pdf",
+          "page": 4
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_105",
+          "semantic_score": 0.7211,
+          "relevant": true,
+          "source": "asthma_guideline.pdf",
+          "page": 7
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_033",
+          "semantic_score": 0.6899,
+          "relevant": false,
+          "source": "fever_guideline.pdf",
+          "page": 2
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk_112",
+          "semantic_score": 0.665,
+          "relevant": true,
+          "source": "asthma_guideline.pdf",
+          "page": 9
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk_077",
+          "semantic_score": 0.642,
+          "relevant": true,
+          "source": "general_care.pdf",
+          "page": 2
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk_120",
+          "semantic_score": 0.6188,
+          "relevant": true,
+          "source": "asthma_guideline.pdf",
+          "page": 10
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk_008",
+          "semantic_score": 0.5943,
+          "relevant": true,
+          "source": "diarrhea_guideline.pdf",
+          "page": 1
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk_095",
+          "semantic_score": 0.5711,
+          "relevant": false,
+          "source": "asthma_guideline.pdf",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "diarrhea_dehydration",
+      "category": "Diarrhoea and Vomiting",
+      "query": "How do I know if my child is becoming dehydrated?",
+      "num_ground_truth_chunks": 7,
+      "ground_truth_chunk_ids": [
+        "chunk_201",
+        "chunk_203",
+        "chunk_198",
+        "chunk_210",
+        "chunk_015",
+        "chunk_233",
+        "chunk_220"
+      ],
+      "matched_ground_truth_chunks": [
+        {
+          "id": "chunk_201",
+          "metadata": {
+            "source": "diarrhea_guideline.pdf",
+            "section": "Signs of Dehydration",
+            "page": 5
+          },
+          "matched_evidence": [
+            "altered responsiveness",
+            "sunken eyes",
+            "dry mucous membranes"
+          ]
+        },
+        {
+          "id": "chunk_203",
+          "metadata": {
+            "source": "diarrhea_guideline.pdf",
+            "section": "Signs of Dehydration",
+            "page": 5
+          },
+          "matched_evidence": [
+            "tachycardia",
+            "tachypnoea",
+            "reduced skin turgor",
+            "decreased urine output"
+          ]
+        },
+        {
+          "id": "chunk_198",
+          "metadata": {
+            "source": "diarrhea_guideline.pdf",
+            "section": null,
+            "page": 4
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_210",
+          "metadata": {
+            "source": "diarrhea_guideline.pdf",
+            "section": null,
+            "page": 6
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_015",
+          "metadata": {
+            "source": "fever_guideline.pdf",
+            "section": null,
+            "page": 3
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_233",
+          "metadata": {
+            "source": "general_care.pdf",
+            "section": null,
+            "page": 3
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_220",
+          "metadata": {
+            "source": "diarrhea_guideline.pdf",
+            "section": null,
+            "page": 7
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        }
+      ],
+      "precision_at_5": 0.8,
+      "precision_at_10": 0.7,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_201",
+          "semantic_score": 0.8677,
+          "relevant": true,
+          "source": "diarrhea_guideline.pdf",
+          "page": 5
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_203",
+          "semantic_score": 0.839,
+          "relevant": true,
+          "source": "diarrhea_guideline.pdf",
+          "page": 5
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_198",
+          "semantic_score": 0.7902,
+          "relevant": true,
+          "source": "diarrhea_guideline.pdf",
+          "page": 4
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_210",
+          "semantic_score": 0.7511,
+          "relevant": true,
+          "source": "diarrhea_guideline.pdf",
+          "page": 6
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_205",
+          "semantic_score": 0.7203,
+          "relevant": false,
+          "source": "diarrhea_guideline.pdf",
+          "page": 5
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk_015",
+          "semantic_score": 0.689,
+          "relevant": true,
+          "source": "fever_guideline.pdf",
+          "page": 3
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk_233",
+          "semantic_score": 0.6602,
+          "relevant": true,
+          "source": "general_care.pdf",
+          "page": 3
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk_220",
+          "semantic_score": 0.6377,
+          "relevant": true,
+          "source": "diarrhea_guideline.pdf",
+          "page": 7
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk_101",
+          "semantic_score": 0.6109,
+          "relevant": false,
+          "source": "asthma_guideline.pdf",
+          "page": 6
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk_244",
+          "semantic_score": 0.5844,
+          "relevant": false,
+          "source": "general_care.pdf",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "gastroenteritis_prevention",
+      "category": "General Care and Prevention",
+      "query": "What is the most effective way to prevent the spread of stomach bugs in my family?",
+      "num_ground_truth_chunks": 7,
+      "ground_truth_chunk_ids": [
+        "chunk_301",
+        "chunk_302",
+        "chunk_310",
+        "chunk_044",
+        "chunk_198",
+        "chunk_330",
+        "chunk_071"
+      ],
+      "matched_ground_truth_chunks": [
+        {
+          "id": "chunk_301",
+          "metadata": {
+            "source": "general_care.pdf",
+            "section": "Preventing Gastroenteritis",
+            "page": 8
+          },
+          "matched_evidence": [
+            "washing hands with soap",
+            "most important factor in preventing the spread of gastroenteritis"
+          ]
+        },
+        {
+          "id": "chunk_302",
+          "metadata": {
+            "source": "general_care.pdf",
+            "section": "Preventing Gastroenteritis",
+            "page": 8
+          },
+          "matched_evidence": [
+            "hands should be washed after going to the toilet",
+            "before preparing, serving or eating food"
+          ]
+        },
+        {
+          "id": "chunk_310",
+          "metadata": {
+            "source": "general_care.pdf",
+            "section": null,
+            "page": 9
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_044",
+          "metadata": {
+            "source": "general_care.pdf",
+            "section": null,
+            "page": 1
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_198",
+          "metadata": {
+            "source": "diarrhea_guideline.pdf",
+            "section": null,
+            "page": 4
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_330",
+          "metadata": {
+            "source": "general_care.pdf",
+            "section": null,
+            "page": 11
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        },
+        {
+          "id": "chunk_071",
+          "metadata": {
+            "source": "general_care.pdf",
+            "section": null,
+            "page": 3
+          },
+          "matched_evidence": [
+            "additional supporting evidence"
+          ]
+        }
+      ],
+      "precision_at_5": 0.6,
+      "precision_at_10": 0.7,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_301",
+          "semantic_score": 0.8322,
+          "relevant": true,
+          "source": "general_care.pdf",
+          "page": 8
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_302",
+          "semantic_score": 0.8011,
+          "relevant": true,
+          "source": "general_care.pdf",
+          "page": 8
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_310",
+          "semantic_score": 0.7488,
+          "relevant": true,
+          "source": "general_care.pdf",
+          "page": 9
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_205",
+          "semantic_score": 0.7102,
+          "relevant": false,
+          "source": "diarrhea_guideline.pdf",
+          "page": 5
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_318",
+          "semantic_score": 0.6799,
+          "relevant": false,
+          "source": "general_care.pdf",
+          "page": 10
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk_044",
+          "semantic_score": 0.6511,
+          "relevant": true,
+          "source": "general_care.pdf",
+          "page": 1
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk_198",
+          "semantic_score": 0.6233,
+          "relevant": true,
+          "source": "diarrhea_guideline.pdf",
+          "page": 4
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk_330",
+          "semantic_score": 0.5988,
+          "relevant": true,
+          "source": "general_care.pdf",
+          "page": 11
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk_071",
+          "semantic_score": 0.5701,
+          "relevant": true,
+          "source": "general_care.pdf",
+          "page": 3
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk_017",
+          "semantic_score": 0.5433,
+          "relevant": false,
+          "source": "fever_guideline.pdf",
+          "page": 4
+        }
+      ]
+    }
+  ]
+}

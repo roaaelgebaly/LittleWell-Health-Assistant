@@ -1,0 +1,13 @@
+pymupdf==1.28.2
+langchain-text-splitters==1.1.2
+chromadb
+sentence_transformers 
+tqdm
+langgraph 
+groq 
+python-dotenv
+google-generativeai
+huggingface_hub 
+streamlit
+fastapi
+uvicorn

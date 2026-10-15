@@ -1,0 +1,34 @@
+"""from sentence_transformers import SentenceTransformer
+
+MODEL_PATH = r"D:\projects\Med_RAG\qwen_embedding_model"
+
+print("Starting...")
+
+model = SentenceTransformer(
+    MODEL_PATH,
+    device="cpu"
+)
+
+print("✓ Loaded!")
+
+embedding = model.encode(
+    ["What foods help with diarrhea in toddlers"],
+    prompt_name="query"
+)
+
+print("✓ Encoded!")
+print("Shape:", embedding.shape)"""
+import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+from groq import Groq
+
+load_dotenv(Path(__file__).resolve().parent / ".env")
+
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+
+models = client.models.list()
+
+for model in models.data:
+    print(model.id)

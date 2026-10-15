@@ -1,0 +1,41 @@
+:root {
+  font-family: 'Trebuchet MS', 'Gill Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #22302b;
+  background: #f7f5f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #f7f5f0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f7f5f0;
+  color: #22302b;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
